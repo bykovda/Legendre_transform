@@ -11,7 +11,8 @@ R_j = min_j {g2[j]-f(xyz1[i],xyz2[j])}    when sign = -1
 
 returns ind = argmax(argmin)
 
-where f is defined by fun_id:
+The cost function f is defined by fun_id:
+
 fun_id = 0  :	f = -(x1 x2 + y1 y2 + z1 z2)
 
 fun_id = 10 :  	f = -(x1 x2 + y1 y2)
@@ -26,10 +27,12 @@ fun_id = 3	:	f =  -sqrt(1 - [(x1-x2)^2+(y1-y2)^2])
 
 fun_id = 4	:	f =  sqrt((x1-x2)^2+(y1-y2)^2+(z1-z2)^2)
 
-Note: when fun_id = 101 lap_sqm_mex calculates
+
+Note: when fun_id = 101, lap_sqm_mex calculates
 
 max_j {g2[j] / f(xyz1[i], xyz2[j])}    when sign = +1
 
 min_j {g2[j] / f(xyz1[i], xyz2[j])}    when sign = -1
 
-MATLAB implementation allows to use additional parameters in the cost function
+
+MATLAB implementation allows to use additional parameters in the cost function (see implementation for details)
