@@ -10,7 +10,7 @@ R_j = min_j {g2[j]-f(xyz1[i],xyz2[j])}    when sign = -1
 returns ind = argmax(argmin)
 
 where f is defined by fun_id:
-fun_id = 0  :	f = -(x1 x2 + y1 y2 + z1 z2) $`a^2+b^2=c^2`$
+fun_id = 0  :	f = -(x1 x2 + y1 y2 + z1 z2) $a^2+b^2=c^2$
 fun_id = 10 :  	f = -(x1 x2 + y1 y2)
 fun_id = 1  :  	f = -log[1 - (x1 x2 + y1 y2 + z1 z2)]
 fun_id = 101:  	f =  1 - (x1 x2 + y1 y2 + z1 z2)   (see the Note below)
