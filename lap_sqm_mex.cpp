@@ -20,7 +20,6 @@ Note: when fun_id = 101 lap_sqm_mex calculates
 max_j {g2[j]/f(xyz1[i],xyz2[j])}    when sign = +1
 min_j {g2[j]/f(xyz1[i],xyz2[j])}    when sign = -1
 
-2020-03-01
 */
 
 #include <math.h>
