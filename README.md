@@ -1,7 +1,7 @@
 # legendre_transform
 Generalized Legendre (Legendre–Fenchel) transformation for applications in nonimaging optics
 
-C implementation
+C implementation uses OpenMP. AVX-512 implementation with double/single precision is also available.
 
 function lap_sqm_mex(x1, y1, z1, x2, y2, z2, g2, fun_id, sign) calculates
 
@@ -35,4 +35,5 @@ max_j {g2[j] / f(xyz1[i], xyz2[j])}    when sign = +1
 min_j {g2[j] / f(xyz1[i], xyz2[j])}    when sign = -1
 
 
-MATLAB implementation allows to use additional parameters in the cost function (see implementation for details)
+
+MATLAB (MEX) implementation allows to use additional parameters in the cost function (see implementation for details)
