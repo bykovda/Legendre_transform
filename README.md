@@ -17,15 +17,17 @@ fun_id = 0  :	f = -(x1 x2 + y1 y2 + z1 z2)
 
 fun_id = 10 :  	f = -(x1 x2 + y1 y2)
 
-fun_id = 1  :  	f = -log[1 - (x1 x2 + y1 y2 + z1 z2)]
+fun_id = 1  :  	f = -log[1 - (x1 x2 + y1 y2 + z1 z2)]	(and +infinity if log-argument is negative)
 
-fun_id = 101:  	f =  1 - (x1 x2 + y1 y2 + z1 z2)   (see the Note below)
+fun_id = 101:  	f =  1 - (x1 x2 + y1 y2 + z1 z2)		(see the Note below)
 
-fun_id = 2	:	f =  sqrt(1 + (x1-x2)^2+(y1-y2)^2)
+fun_id = 2	:	f =  sqrt[1 + (x1-x2)^2 + (y1-y2)^2]
 
-fun_id = 3	:	f =  -sqrt(1 - [(x1-x2)^2+(y1-y2)^2])
+fun_id = 3	:	f = -sqrt[1 - (x1-x2)^2 - (y1-y2)^2]	(and +infinity if sqrt-argument is negative)
 
-fun_id = 4	:	f =  sqrt((x1-x2)^2+(y1-y2)^2+(z1-z2)^2)
+fun_id = 4	:	f =  sqrt[(x1-x2)^2 + (y1-y2)^2 + (z1-z2)^2]
+
+fun_id = 5	:	f = -sqrt[(z1-z2)^2 - (x1-x2)^2 - (y1-y2)^2]	(and +infinity if sqrt-argument is negative)
 
 
 Note: when fun_id = 101, lap_sqm_mex calculates
